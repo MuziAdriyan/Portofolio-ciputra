@@ -29,11 +29,11 @@
     h1{font-size:clamp(28px,4.5vw,43px);line-height:1.18;letter-spacing:-1px;margin:0 0 16px}
     .dek{font-size:18px;color:#4f5b6d;line-height:1.6;margin:0 0 18px}
     .byline{display:flex;flex-wrap:wrap;gap:8px 16px;padding:15px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}
-    .hero{margin:24px 0 8px;border-radius:8px;overflow:hidden;background:linear-gradient(135deg,#14233f,#1d5d89 55%,#49b9c7);min-height:250px;display:grid;place-items:center;color:#fff;text-align:center;padding:28px;position:relative}
-    .hero:before,.hero:after{content:"";position:absolute;border:1px solid #ffffff35;border-radius:50%;width:260px;height:260px}
-    .hero:after{width:180px;height:180px}
-    .hero-content{position:relative;z-index:1}
-    .hero .initial{font-size:52px;font-weight:900;letter-spacing:3px}
+    .hero{margin:24px 0 8px;border-radius:8px;overflow:hidden;min-height:250px;display:grid;place-items:center;color:#fff;text-align:center;padding:28px;position:relative}
+    .hero-gambar{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1}
+    .hero::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.4);z-index:2}
+    .hero-content{position:relative;z-index:3}
+    .hero .initial{font-size:52px;font-weight:900;letter-spacing:3px;margin-bottom:8px}
     .hero .hero-label{font-size:12px;letter-spacing:2px;text-transform:uppercase}
     figcaption{font-size:11px;color:var(--muted);margin-bottom:25px}
     .article-body{font-size:16px;color:#273247}
@@ -92,6 +92,7 @@
 
         <figure>
           <div class="hero" role="img" aria-label="Ilustrasi grafis bertema kreator animasi sekolah">
+            <img src="IMG_20261012_071354.jpg" alt="Ilustrasi Kreativitas Pelajar" class="hero-gambar">
             <div class="hero-content">
               <div class="initial">CP</div>
               <div class="hero-label">Kreativitas Pelajar · Animasi Sekolah</div>
@@ -151,7 +152,7 @@
           <h3>BACA JUGA</h3>
           <a class="related" href="#kreatif">Bagaimana ide sederhana bisa menjadi cerita animasi?</a>
           <a class="related" href="#teknologi">Media sosial sebagai ruang berkarya bagi pelajar</a>
-          <a class="related" href="#profil">Konsistensi dan proses belajar dalam dunia kreatif</a>
+          <a class="related" href="#profil">Konsistensi dan belajar dalam dunia kreatif</a>
         </section>
       </aside>
     </div>
@@ -186,5 +187,4 @@
     }
   </script>
 </body>
-  </html>
-    
+</html>
